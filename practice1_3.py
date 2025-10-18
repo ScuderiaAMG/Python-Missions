@@ -60,7 +60,7 @@ def scrape_all_pages(base_url, total_rankings=100):
     return all_universities[:total_rankings]
 
 if __name__ == "__main__":
-    base_url = "https://www.shanghairanking.cn/rankings/bcur/2025"
+    base_url = "https://www.compassedu.hk/rk"
     ranking_data = scrape_all_pages(base_url, 100)
     table = PrettyTable()
     table.field_names = ["排名", "学校名称", "省市", "类型", "总分"]
